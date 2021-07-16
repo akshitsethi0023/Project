@@ -75,14 +75,12 @@ WSGI_APPLICATION = 'BusRouteFinder.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {},
-    'users': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ShortestPath',
         'USER': 'postgres',
         'PASSWORD' : 'anshul',
-        'HOST' : 'localhost',
-    }
+        'HOST' : 'localhost',}
 }
 
 

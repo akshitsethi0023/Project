@@ -4,9 +4,9 @@ from django.db import models
 # Create your models here.
 
 class Station(models.Model):
-    name = models.CharField(max_length=100)
-    def __str__(self) -> str:
-        return self.name
+    name = models.CharField(primary_key=True,max_length=100)
+    #def __str__(self) -> str:
+    #    return self.name
 
 class Edge(models.Model):
     source = models.ForeignKey(Station,on_delete=models.CASCADE, related_name="source")
