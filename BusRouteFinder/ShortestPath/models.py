@@ -16,4 +16,4 @@ class Edge(models.Model):
     duration = models.IntegerField()
     buses =  ArrayField(models.CharField(max_length = 10), blank=False)
     def __str__(self) -> str:
-        return "From: " + self.source.name +".........To:  "+ self.destination.name
+        return "From : " + self.source.name +"      ->      To : "+ self.destination.name
